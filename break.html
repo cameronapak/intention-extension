@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time for a Break</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="bg-white p-8 rounded-lg shadow-md text-center">
+    <h1 class="text-3xl font-bold mb-4">Time's Up!</h1>
+    <p class="text-xl mb-6">Great job focusing on your intention. It's time to take a break!</p>
+    <p class="mb-6">Consider setting a new intention when you're ready to continue.</p>
+    <button id="newIntention" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+      Set New Intention
+    </button>
+  </div>
+  <script>
+    document.getElementById('newIntention').addEventListener('click', () => {
+      window.close()
+    })
+  </script>
+</body>
+</html>
